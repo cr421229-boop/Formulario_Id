@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Contacto</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1 id="titulo_formulario">Formulario de Contacto</h1>
+  <form id="form_contacto">
+
+    <div id="Nombre">
+      <label for="nombre">Nombre:</label><br>
+      <input type="text" id="nombre" name="nombre" required>
+    </div>
+    <br>
+
+    <div id="Apellido">
+      <label for="apellido">Apellido:</label><br>
+      <input type="text" id="apellido" name="apellido" required>
+    </div>
+    <br>
+
+    <div id="Tipo_identificacion">
+      <label for="tipo_identificacion">Tipo de Identificación:</label><br>
+      <select id="tipo_identificacion" name="tipo_identificacion" required>
+        <option value="">Seleccione una opción</option>
+        <option value="CC">Cédula de Ciudadanía (CC)</option>
+        <option value="TI">Tarjeta de Identidad (TI)</option>
+        <option value="PA">Pasaporte (PA)</option>
+      </select>
+    </div>
+    <br>
+
+    <div id="Numero_identificacion">
+      <label for="numero_identificacion">Número de Identificación:</label><br>
+      <input type="text" id="numero_identificacion" name="numero_identificacion" required>
+    </div>
+    <br>
+
+    <div id="Fecha_nacimiento">
+      <label for="fecha_nacimiento">Fecha de Nacimiento:</label><br>
+      <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+    </div>
+    <br>
+
+    <div id="Celular">
+      <label for="celular">Número de Celular:</label><br>
+      <input type="tel" id="celular" name="celular" pattern="[0-9]{10}" placeholder="3001234567" required>
+    </div>
+    <br>
+
+    <div id="Ciudad">
+      <label for="ciudad">Ciudad:</label><br>
+      <select id="ciudad" name="ciudad" required>
+        <option value="">Seleccione una opción</option>
+        <option value="Bogotá">Bogotá</option>
+        <option value="Medellín">Medellín</option>
+        <option value="Cali">Cali</option>
+        <option value="Barranquilla">Barranquilla</option>
+        <option value="Cartagena">Cartagena</option>
+        <option value="Cúcuta">Cúcuta</option>
+        <option value="Bucaramanga">Bucaramanga</option>
+        <option value="Pereira">Pereira</option>
+        <option value="Santa Marta">Santa Marta</option>
+        <option value="Ibagué">Ibagué</option>
+        <option value="Manizales">Manizales</option>
+        <option value="Villavicencio">Villavicencio</option>
+        <option value="Neiva">Neiva</option>
+        <option value="Pasto">Pasto</option>
+        <option value="Armenia">Armenia</option>
+        <option value="Popayán">Popayán</option>
+        <option value="Sincelejo">Sincelejo</option>
+        <option value="Valledupar">Valledupar</option>
+        <option value="Montería">Montería</option>
+        <option value="Tunja">Tunja</option>
+      </select>
+    </div>
+    <br>
+
+    <div id="Politica_datos">
+      <input type="checkbox" id="politica_datos" name="politica_datos" required>
+      <label for="politica_datos">Acepto la política de tratamiento de datos.</label>
+    </div>
+    <br>
+
+    <div id="Submit">
+      <input type="submit" id="boton_enviar" value="Enviar">
+    </div>
+
+  </form>
+</body>
+</html>
